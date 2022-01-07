@@ -82,6 +82,30 @@ body
     }
 }
 
+.modal
+{
+    .modal-header
+    {
+        .modal-title
+        {
+            color: floralwhite;
+        }
+        .close
+        {
+            color: floralwhite;
+        }
+        background-color: $background-dark;
+    }
+    .modal-content
+    {
+        background-color: $background-pale;
+    }
+    .modal-body
+    {
+        background-color: $background-pale;
+    }
+}
+
 #carouselButton
 {
     right: 0px;

@@ -31,7 +31,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="loginButton">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -67,6 +67,17 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-6 align-self-end">
+                                <button type="submit" class="btn btn-primary">
+                                    Login
+                                </button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -86,62 +97,66 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group row">
-                            <label for="number" class="col-12 col-md-2 col-form-label"><b>Number of Guests</b></label>
-                            <div class="col-1 form-check">
-                                <input type="radio" class="form-check-input"
-                                name="number" id="one" value="">
-                                <label class="form-check-label" for="one">
-                                    <strong>1</strong>
-                                </label>
-                            </div>
-                            <div class="col-1 form-check">
-                                <input type="radio" class="form-check-input"
-                                name="number" id="two" value="">
-                                <label class="form-check-label" for="two">
-                                    <strong>2</strong>
-                                </label>
-                            </div>
-                            <div class="col-1 form-check">
-                                <input type="radio" class="form-check-input"
-                                name="number" id="three" value="">
-                                <label class="form-check-label" for="three">
-                                    <strong>3</strong>
-                                </label>
-                            </div>
-                            <div class="col-1 form-check">
-                                <input type="radio" class="form-check-input"
-                                name="number" id="four" value="">
-                                <label class="form-check-label" for="four">
-                                    <strong>4</strong>
-                                </label>
-                            </div>
-                            <div class="col-1 form-check">
-                                <input type="radio" class="form-check-input"
-                                name="number" id="five" value="">
-                                <label class="form-check-label" for="five">
-                                    <strong>5</strong>
-                                </label>
-                            </div>
-                            <div class="col-1 form-check">
-                                <input type="radio" class="form-check-input"
-                                name="number" id="six" value="">
-                                <label class="form-check-label" for="six">
-                                    <strong>6</strong>
-                                </label>
+                            <label for="number" class="col-sm-2 col-form-label"><b>Number of Guests</b></label>
+                            <div class="col-sm-9">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input"
+                                    name="number" id="one" value="">
+                                    <label class="form-check-label" for="one">
+                                        <strong>1</strong>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input"
+                                    name="number" id="two" value="">
+                                    <label class="form-check-label" for="two">
+                                        <strong>2</strong>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input"
+                                    name="number" id="three" value="">
+                                    <label class="form-check-label" for="three">
+                                        <strong>3</strong>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input"
+                                    name="number" id="four" value="">
+                                    <label class="form-check-label" for="four">
+                                        <strong>4</strong>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input"
+                                    name="number" id="five" value="">
+                                    <label class="form-check-label" for="five">
+                                        <strong>5</strong>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input"
+                                    name="number" id="six" value="">
+                                    <label class="form-check-label" for="six">
+                                        <strong>6</strong>
+                                    </label>
+                                </div>
                             </div>
                         </div>
 
                         <div id="section" class="form-group row">
                             <label for="secton" class="col-6 col-md-2 col-form-label"><b>Section</b></label>
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-success active">
-                                    <input type="radio" name="number" id="non-smoking">
-                                        <strong>Non-Smoking</strong>
-                                </label>  
-                                <label class="btn btn-danger active">
-                                    <input type="radio" name="number" id="smoking">
-                                        <strong>Smoking</strong>
-                                </label>
+                            <div class="col-6 col-md-10">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                        <input type="radio" name="number" id="non-smoking">
+                                            <strong>Non-Smoking</strong>
+                                    </label>  
+                                    <label class="btn btn-danger active">
+                                        <input type="radio" name="number" id="smoking">
+                                            <strong>Smoking</strong>
+                                    </label>
+                                </div>
                             </div>
                         </div>
 
@@ -182,7 +197,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a data-toggle="modal" data-target="#reserveTable" role="button"
+                    <a id="reserveButton" role="button"
                     class="btn btn-warning nav-link btn-block">
                         Reserve Table
                     </a>
@@ -352,6 +367,24 @@
                     $('#carouselButton').children('span').removeClass('fa-play');
                     $('#carouselButton').children('span').addClass('fa-pause');
                 }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function()
+        {
+            $('#reserveButton').click(function()
+            {
+                $('#reserveTable').modal('toggle');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function()
+        {
+            $('#loginButton').click(function()
+            {
+                $('#loginModal').modal('toggle');
             });
         });
     </script>
