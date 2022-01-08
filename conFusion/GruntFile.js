@@ -202,7 +202,7 @@ module.exports = function(grunt)
             {
                 options:
                 {
-                    collaspeWhitespace: true
+                    collapseWhitespace: true
                 },
                 files:
                 {
